@@ -1,0 +1,25 @@
+{
+  "name": "simple-file-watch",
+  "bin": {
+    "simple-file-watch": "./cli.js"
+  },
+  "version": "1.0.0",
+  "keywords": [
+    "cli",
+    "file",
+    "watch"
+  ],
+  "author": "Dennis Iversen",
+  "license": "MIT",
+  "contributors": [],
+  "dependencies": {
+    "file-extension": "^3.0.2",
+    "get-value": "^2.0.6",
+    "minimist": "^1.2.0",
+    "node-watch": "^0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diversen/simple-file-watch.git"
+  }
+}
