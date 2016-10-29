@@ -11,4 +11,7 @@ Usage example:
 
     simple-file-watch --extension='js,php' --path='.' --command='ls -l' --silence
 
+If you run the command without any params, it will watch any file changes in 
+current directory, and output some info to stdout
+
 License MIT

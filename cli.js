@@ -43,6 +43,16 @@ function consoleLog (txt) {
 
 function execute(cmd) {
     exec(cmd, function (error, stdout, stderr) {
+        if (error) {
+            // Always log error
+            console.log(error);
+        }
+        
+        if (stderr) {
+            // Always log error
+            console.log(stderr);
+        }
+        
         consoleLog(stdout);
     });
 }
@@ -60,6 +70,10 @@ watch(path, function (filename) {
             }
         } else {
             consoleLog("File changed: " + filename);
+            if (command){ 
+                consoleLog("Executing: " + command);
+                execute(command);
+            }
         }        
     }
 });
