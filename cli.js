@@ -63,6 +63,7 @@ watch(path, function (filename) {
     if (filename) {
         var ext = fileExtension(filename);
         if (extension && (extension.indexOf(ext) !== -1)) {
+            console.log("Extension:" + extension);
             consoleLog("File changed: " + filename);
             if (command){ 
                 consoleLog("Executing: " + command);
@@ -70,7 +71,7 @@ watch(path, function (filename) {
             }
         } else {
             consoleLog("File changed: " + filename);
-            if (command){ 
+            if (command && (get(argv, 'extension') === '*')){ 
                 consoleLog("Executing: " + command);
                 execute(command);
             }
