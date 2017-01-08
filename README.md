@@ -17,5 +17,8 @@ then the the given command will be executed on file changes. If you specify `ext
 then the `command` will only be executed on changes to files with the given
 extension.
 
+Note: There is max on number of files you can watch. See: 
+
+http://stackoverflow.com/questions/16748737/grunt-watch-error-waiting-fatal-error-watch-enospc
 
 License MIT
