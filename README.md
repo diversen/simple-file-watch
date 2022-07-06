@@ -9,7 +9,7 @@ and execute a command (optional) on changes.
 
 Usage example: 
 
-    simple-file-watch --extension='js,php' --path='.' --command='ls -l' --silence
+    simple-file-watch --extension='js,php' --path='.' --path='test' --command='ls -l' --silence
 
 If you run the command without any params, it will watch any file changes in 
 current directory, and output some info to stdout. If you specify `command`
