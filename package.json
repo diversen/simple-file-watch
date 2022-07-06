@@ -3,7 +3,7 @@
   "bin": {
     "simple-file-watch": "./cli.js"
   },
-  "version": "2.0.1",
+  "version": "2.0.2",
   "keywords": [
     "cli",
     "file",
