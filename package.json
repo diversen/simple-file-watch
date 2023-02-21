@@ -3,7 +3,7 @@
   "bin": {
     "simple-file-watch": "./cli.js"
   },
-  "version": "2.0.2",
+  "version": "3.0.0",
   "keywords": [
     "cli",
     "file",
@@ -17,7 +17,7 @@
     "get-value": "^2.0.6",
     "minimist": "^1.2.0",
     "minimist-mini": "^2.0.7",
-    "node-watch": "^0.4.1"
+    "node-watch": "^0.7.3"
   },
   "repository": {
     "type": "git",
