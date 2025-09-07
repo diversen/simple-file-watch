@@ -22,6 +22,7 @@ Flags:
     --command='ls -l' // command to execute on file change  
     --recursive // watch subdirectories
     --silence // no output to stdout
+    --run-on-startup // Will run on startup before watching begins
 
 If you run the command without any params, it will watch any file changes in 
 current directory, and output the file changed to stdout. 
