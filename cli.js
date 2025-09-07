@@ -67,6 +67,12 @@ function execute(cmd) {
 var command = m.get('command');
 var lastExecution = new Date().getTime();
 
+// Run command immediately if --run-on-startup is set
+if (command && m.get('run-on-startup')) {
+    consoleLog("Executing on startup: " + command);
+    execute(command);
+}
+
 watch(path, { delay: delay, recursive: recursive, persistent: true }, async function (evt, filename) {
 
     // Check if last execution was less than 'delay' ago + some offset (10% of delay)
